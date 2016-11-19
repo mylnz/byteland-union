@@ -8,39 +8,38 @@ import java.util.stream.Collectors;
 
 /**
  * Created by mylnz on 14.11.2016.
+ *
+ * Engine of solution. As Bootstrap
  */
 public class Engine {
 
-    public static void main(String[] args) {
+    public void main(String[] args) {
         try {
             Map<Integer, List<Integer>> inputDataMap = getInputDataMap();
 
-            inputDataMap.forEach((numberOfStates, connectedCities) -> {
-                System.out.println(HighCouncilOfWiseMen.getStepCountToUnify(connectedCities));
-            });
+            inputDataMap.forEach((numberOfStates, connectedCities) -> System.out.println(HighCouncilOfWiseMen.getStepCountToUnify(connectedCities)));
 
         } catch (Exception e) {
             e.getMessage();
         }
-
     }
 
-    private static Map<Integer, List<Integer>> getInputDataMap() throws Exception {
+    private Map<Integer, List<Integer>> getInputDataMap() throws Exception {
 
         BufferedReader handleInput = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.print("Enter test count: ");
+        System.out.print("Case Count: ");
         int testCount = Integer.parseInt(handleInput.readLine());
         ValidationUtils.isTestCountNotValid(testCount);
 
         Map<Integer, List<Integer>> inputDataMap = new HashMap<>();
 
         for (int i = 0; i < testCount; i++) {
-            System.out.print("Enter city count: ");
+            System.out.print("City Count: ");
             int cityCount = Integer.parseInt(handleInput.readLine());
 
-            System.out.print("Enter road connections: ");
-            List<Integer> roadConnections = Arrays.asList(handleInput.readLine().split(" ")).stream().map(s -> Integer.parseInt(s.trim())).collect(Collectors.toList());
+            System.out.print("Road Connections: ");
+            List<Integer> roadConnections = Arrays.stream(handleInput.readLine().split(" ")).map(s -> Integer.parseInt(s.trim())).collect(Collectors.toList());
 
             ValidationUtils.isInputDataNotValid(cityCount, roadConnections);
 
