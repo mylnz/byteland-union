@@ -1,0 +1,9 @@
+-classpath 'C:\\MYLNZ\\mylnz-repos\\byteland-union\\build\\classes\\main;C:\\MYLNZ\\mylnz-repos\\byteland-union\\build\\resources\\main'
+-d 'C:\\MYLNZ\\mylnz-repos\\byteland-union\\build\\docs\\javadoc'
+-doctitle 'bytelandunion 1.0-SNAPSHOT API'
+-quiet 
+-windowtitle 'bytelandunion 1.0-SNAPSHOT API'
+'C:\\MYLNZ\\mylnz-repos\\byteland-union\\src\\main\\java\\Engine.java'
+'C:\\MYLNZ\\mylnz-repos\\byteland-union\\src\\main\\java\\HighCouncilOfWiseMen.java'
+'C:\\MYLNZ\\mylnz-repos\\byteland-union\\src\\main\\java\\LandStructureUtils.java'
+'C:\\MYLNZ\\mylnz-repos\\byteland-union\\src\\main\\java\\ValidationUtils.java'
