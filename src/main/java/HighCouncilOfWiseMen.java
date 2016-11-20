@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -41,7 +42,10 @@ class HighCouncilOfWiseMen {
     private static void unifyProcess(Map<Integer, Set<Integer>> cityConnectionMap, Set<Integer> leafCitySet, Set<Integer> nodeSet) {
         Object[] internalNodes = nodeSet.toArray();
 
-        Integer leafCity, node, secondNode;
+        Integer leafCity, node, connectedNextNode;
+
+        // already unified cities list in this step
+        List<Integer> unifiedCityList = new ArrayList<>();
 
         for (int i = 0; i < internalNodes.length; i++) {
             node = (Integer) internalNodes[i];
@@ -50,26 +54,38 @@ class HighCouncilOfWiseMen {
 
                 if (leafCity < 0) {// there is not any leaf city
                     // check for next node
-                    secondNode = (Integer) internalNodes[i + 1];
-                    leafCity = getLeafInSet(leafCitySet, cityConnectionMap.get(secondNode));
+                    connectedNextNode = (Integer) cityConnectionMap.get(node).toArray() [0];
+                    leafCity = getLeafInSet(leafCitySet, cityConnectionMap.get(connectedNextNode));
 
                     if (leafCity < 0) {// there is not any leaf city
-                        // then unify the node with secondnode
-                        cityConnectionMap.get(node).addAll(cityConnectionMap.get(secondNode));
-                        cityConnectionMap.get(node).remove(secondNode);
-                        nodeSet.remove(secondNode);
-                        cityConnectionMap.remove(secondNode);
+                        if( !(unifiedCityList.contains(node) && unifiedCityList.contains(connectedNextNode)) ) {
+                            // then unify the node with secondnode
+                            cityConnectionMap.get(node).addAll(cityConnectionMap.get(connectedNextNode));
+                            cityConnectionMap.get(node).remove(connectedNextNode);
+                            nodeSet.remove(connectedNextNode);
+                            cityConnectionMap.remove(connectedNextNode);
+
+                            unifiedCityList.add(node);
+                            unifiedCityList.add(connectedNextNode);
+                        }
                     }
 
                 } else { // there is at least a leaf city
-                    Set<Integer> mapConnectionSet = cityConnectionMap.get(node);
-                    mapConnectionSet.remove(leafCity);
-                    leafCitySet.remove(leafCity);
 
-                    if (mapConnectionSet.isEmpty()) {
-                        leafCitySet.add(node);
-                        cityConnectionMap.remove(node);
+                    if( !(unifiedCityList.contains(node) && unifiedCityList.contains(leafCity)) ){
+                        Set<Integer> mapConnectionSet = cityConnectionMap.get(node);
+                        mapConnectionSet.remove(leafCity);
+                        leafCitySet.remove(leafCity);
+
+                        if (mapConnectionSet.isEmpty()) {
+                            leafCitySet.add(node);
+                            cityConnectionMap.remove(node);
+                        }
+
+                        unifiedCityList.add(node);
+                        unifiedCityList.add(leafCity);
                     }
+
                 }
             }
         }

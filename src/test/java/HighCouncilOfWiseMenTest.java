@@ -19,5 +19,7 @@ public class HighCouncilOfWiseMenTest {
         assertThat(HighCouncilOfWiseMen.getStepCountToUnify(Arrays.asList(0, 1, 1, 1, 1, 0, 2, 2)), equalTo(5));
 
         assertThat(HighCouncilOfWiseMen.getStepCountToUnify(Arrays.asList(2, 0, 4, 0, 0, 4, 5, 5, 2)), equalTo(5));
+
+        assertThat(HighCouncilOfWiseMen.getStepCountToUnify(Arrays.asList(0, 11, 6, 6, 4, 1, 11, 1, 7, 3, 0, 10, 7, 4, 2,10)), equalTo(4));
     }
 }
