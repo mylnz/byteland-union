@@ -17,8 +17,14 @@ public class ValidationUtils implements ValidationUtilsIfc {
     private static final int MINT_TEST_COUNT = 1;
 
     public void isInputDataNotValid(int numberOfStates, List<Integer> connectedCities) throws Exception {
-        if(numberOfStates < MIN_CITY_COUNT || numberOfStates > MAX_CITY_COUNT || connectedCities.size() + 1 != numberOfStates){
-            throw new Exception("Input Data Not Valid");
+        if (numberOfStates < MIN_CITY_COUNT) {
+            throw new Exception("At least " + MIN_CITY_COUNT + " cities are needed.");
+        }
+        if (numberOfStates > MAX_CITY_COUNT) {
+            throw new Exception("Max " + MAX_CITY_COUNT + " cities can be processed.");
+        }
+        if (connectedCities.size() + 1 != numberOfStates) {
+            throw new Exception("Connections of cities are not valid");
         }
     }
 
