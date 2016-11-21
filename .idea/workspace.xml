@@ -2,49 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f1fef77-70f6-4d3e-bacd-2d35f310c466" name="Default" comment="project restructured">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mylnz/byteland/ifc/HighCouncilOfWiseMenIfc.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mylnz/byteland/ifc/LandStructureUtilsIfc.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mylnz/byteland/ifc/ValidationUtilsIfc.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/mylnz/byteland/HighCouncilOfWiseMenTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/mylnz/byteland/ValidationUtilsTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/Engine.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/HighCouncilOfWiseMen.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/LandStructureUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/ValidationUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/test/HighCouncilOfWiseMenTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/test/LandStructureUtilsTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/test/ValidationUtilsTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/docs/javadoc/Engine.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/docs/javadoc/ValidationUtils.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/docs/javadoc/allclasses-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/docs/javadoc/allclasses-noframe.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/docs/javadoc/constant-values.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/docs/javadoc/deprecated-list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/docs/javadoc/help-doc.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/docs/javadoc/index-all.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/docs/javadoc/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/docs/javadoc/overview-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/docs/javadoc/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/docs/javadoc/package-list" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/docs/javadoc/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/docs/javadoc/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/docs/javadoc/script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/docs/javadoc/stylesheet.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/javadoc/javadoc.options" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Engine.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/HighCouncilOfWiseMen.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/LandStructureUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ValidationUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/HighCouncilOfWiseMenTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/ValidationUtilsTest.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/LandStructureUtilsTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/mylnz/byteland/LandStructureUtilsTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/bytelandunion_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/bytelandunion_main.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bytelandunion.iws" />
@@ -82,32 +43,7 @@
           <activation />
         </task>
         <projects_view>
-          <tree_state>
-            <PATH>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="bytelandunion" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
-              </PATH_ELEMENT>
-            </PATH>
-            <PATH>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="bytelandunion" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="Tasks" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
-              </PATH_ELEMENT>
-            </PATH>
-          </tree_state>
+          <tree_state />
         </projects_view>
       </state>
     </system>
@@ -199,7 +135,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mylnz/byteland/ifc/ValidationUtilsIfc.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+              <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -1332,7 +1268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1479653513551</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="project restructured">
+      <created>1479726419004</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1479726419004</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1791,7 +1734,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mylnz/byteland/ifc/ValidationUtilsIfc.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
           <folding />
         </state>
       </provider>
