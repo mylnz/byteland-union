@@ -5,10 +5,9 @@ import com.mylnz.byteland.ifc.ValidationUtilsIfc;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
@@ -35,7 +34,7 @@ public class Engine {
         return validationUtilsIfc;
     }
 
-    private Map<Integer, List<Integer>> getInputDataMap() throws Exception {
+    private List<List<Integer>> getInputDataMap() throws Exception {
 
         BufferedReader handleInput = new BufferedReader(new InputStreamReader(System.in));
 
@@ -43,7 +42,7 @@ public class Engine {
         int testCount = Integer.parseInt(handleInput.readLine());
         getValidationUtilsIfc().isTestCountNotValid(testCount);
 
-        Map<Integer, List<Integer>> inputDataMap = new HashMap<>();
+        List<List<Integer>> roadConnectionInputList = new ArrayList<>();
 
         for (int i = 0; i < testCount; i++) {
             System.out.print("City Count: ");
@@ -54,18 +53,18 @@ public class Engine {
 
             getValidationUtilsIfc().isInputDataNotValid(cityCount, roadConnections);
 
-            inputDataMap.put(cityCount, roadConnections);
+            roadConnectionInputList.add(roadConnections);
 
         }
-        return inputDataMap;
+        return roadConnectionInputList;
     }
 
 
     public void main(String[] args) {
         try {
-            Map<Integer, List<Integer>> inputDataMap = getInputDataMap();
+            List<List<Integer>> roadConnectionInputList = getInputDataMap();
 
-            inputDataMap.forEach((numberOfStates, connectedCities) -> System.out.println(getHighCouncilOfWiseMenIfc().getStepCountToUnify(connectedCities)));
+            roadConnectionInputList.forEach((connectedCities) -> System.out.println(getHighCouncilOfWiseMenIfc().getStepCountToUnify(connectedCities)));
 
         } catch (Exception e) {
             e.getMessage();
