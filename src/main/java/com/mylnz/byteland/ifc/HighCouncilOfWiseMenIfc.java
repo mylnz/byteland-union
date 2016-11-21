@@ -7,7 +7,17 @@ import java.util.List;
  * HighCouncilOfWiseMenIfc
  */
 public interface HighCouncilOfWiseMenIfc {
+    /**
+     * @param connectedCities
+     * @return step count to unify.
+     * <p>
+     * This method is beta version to calculate the step count
+     */
     int getStepCountToUnifyBeta(List<Integer> connectedCities);
 
+    /**
+     * @param connectedCities
+     * @return step count to unify.
+     */
     int getStepCountToUnify(List<Integer> connectedCities);
 }

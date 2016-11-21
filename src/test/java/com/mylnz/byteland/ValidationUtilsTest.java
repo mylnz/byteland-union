@@ -17,25 +17,19 @@ import java.util.Arrays;
 public class ValidationUtilsTest {
     private ValidationUtilsIfc validationUtilsIfc;
 
-    private ValidationUtilsIfc getValidationUtilsIfc() {
-        if (validationUtilsIfc == null) {
-            validationUtilsIfc = new ValidationUtils();
-        }
-        return validationUtilsIfc;
-    }
-
     @Before
     public void setUp() throws Exception {
+        validationUtilsIfc = new ValidationUtils();
     }
 
 
     @Test(expected = Exception.class)
     public void isInputDataNotValidTest() throws Exception {
-        getValidationUtilsIfc().isInputDataNotValid(3, Arrays.asList(0, 1, 2));
+        validationUtilsIfc.isInputDataNotValid(3, Arrays.asList(0, 1, 2));
     }
 
     @Test(expected = Exception.class)
     public void isTestCountNotValidTest() throws Exception {
-        getValidationUtilsIfc().isTestCountNotValid(1001);
+        validationUtilsIfc.isTestCountNotValid(1001);
     }
 }
